@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     java
-    kotlin("jvm") version "1.2.61"
+    kotlin("jvm") version "1.3.0"
 }
 
 group = "io.jworks"
@@ -14,6 +14,7 @@ repositories {
 
 dependencies {
     compile(kotlin("stdlib-jdk8"))
+    compile("org.apache.httpcomponents:httpclient:4.5.6")
     testCompile("junit", "junit", "4.12")
 }
 
